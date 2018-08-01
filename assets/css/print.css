@@ -1,3 +1,4 @@
+#header, #nav-top, #nav-spacer, #nav-left, #nav-center-top #nav-center-bottom, #nav-right, #footer, #sociable, #banner_action{display:none;}
 body{background-color:#ffffff;color:#000000;margin:0px 0px 0px 0px;}
 body{font-family:verdana, arial, sans-serif;font-size:65%;}
 input, select, td, xmp{font-family:verdana, arial, sans-serif;font-size:100%;}
@@ -33,7 +34,7 @@ h3{font-family:verdana, arial, sans-serif;font-size:120%;font-weight:bold;backgr
 .hd0_outer_wrapper{position:relative;left:0px;top:0px;width:750px;background-color:#ffffff;color:#ffffff;}
 .hd1_outer{position:relative;width:750px;height:89px;}
 .hd1_left{position:absolute;left:0px;top:0px;width:160px;height:89px;background-color:#f1f1f1;color:#000000;}
-.hd1_middle{position:absolute;left:161px;top:0px;width:428px;height:89px;background-image:url('http://www.maleisie.be/images/default/head_news.jpg');*/background-color:#f1f1f1;color:#ffffff;}
+.hd1_middle{position:absolute;left:161px;top:0px;width:428px;height:89px;background-color:#f1f1f1;color:#ffffff;}
 .hd1_middle2{position:absolute;left:161px;top:0px;width:428px;height:89px;background-color:#f1f1f1;color:#ffffff;}
 .hd1_right{position:absolute;left:590px;top:0px;width:160px;height:89px;background-color:#f1f1f1;color:#000000;}
 .hd2_outer{position:relative;width:750px;height:17px;background-color:#000000;color:#ffffff;margin-bottom:1px;margin-top:1px;}
