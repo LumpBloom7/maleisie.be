@@ -1,0 +1,12 @@
+<div class="hslice" id="nieuws">
+  <div class="entry-title">Maleisië nieuws</div>
+  <div class="entry-content">
+
+    <h2>Recente nieuwsberichten:</h2>
+    {% for post in site.posts limit:11 %} &#8226;&#160;
+    <a href="{{ post.url }} " title="{{ post.date | date: '%Y/%m/%d' }} {{ post.title }}">{{ post.date | date: '%Y/%m/%d' }} {{ post.title }}</a>
+    <br/> {% endfor %}
+    <br />
+
+  </div>
+</div>
