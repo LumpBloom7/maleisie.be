@@ -14,8 +14,6 @@ Mooie vondsten. Maar sporen van een vliegtuig zijn er nog steeds niet. Ondanks d
 
 Als het hele gebied is afgezocht, stopt de operatie. "Dat punt is waarschijnlijk in juli bereikt", zegt Rob Luijnenburg van het Nederlandse bodemonderzoeksbedrijf Fugro, dat met drie schepen de zeebodem afspeurt. Op dit moment is 80.000 van de 120.000 vierkante kilometer bekeken. "Hoe lang blijf je zoeken", vraagt Luijnenburg zich af. "Probleem is dat het een verschrikkelijk moeilijke beslissing is om ermee te stoppen. Zeker ook met betrekking tot de nabestaanden."
 
-
-
 **Nog steeds in leven**
 
 Normaal gezien zal een team onder leiding van Australië tot juni van dit jaar de zeebodem van de zuidelijke Indische Oceaan blijven afschuimen op zoek naar de laatste rustplaats van het vliegtuig dat op 8 maart 2014 van de radar verdween op zijn reis van Kuala Lumpur naar Peking. Aan boord waren 239 mensen.
