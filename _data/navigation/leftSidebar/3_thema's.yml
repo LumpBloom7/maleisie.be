@@ -1,0 +1,36 @@
+section_title: Thema's
+
+image:
+  source: "/assets/images/default/img_cultuur.jpg"
+  text: >-
+    Afbeelding: Een stukje cultuur.
+
+links:
+
+  - title: Religie
+    alt: Religie
+    url: "http://www.maleisie.be/religie.html"
+
+  - title: Religieuze feesten
+    alt: Religieuze feesten
+    url: "http://www.maleisie.be/religieuze_feesten.html"
+
+  - title: Eten en drinken
+    alt: Eten en drinken
+    url: "http://www.maleisie.be/eten_drinken.html"
+
+  - title: Cultuur
+    alt: Cultuur
+    url: "http://www.maleisie.be/cultuur.html"
+
+  - title: Gezichtsverlies
+    alt: Het vermijden van gezichtsverlies
+    url: "http://www.maleisie.be/gezichtsverlies_vermijden.html"
+
+  - title: Winkelen
+    alt: Winkelen
+    url: "http://www.maleisie.be/winkelen.html"
+
+  - title: Reistips
+    alt: Reistips
+    url: "http://www.maleisie.be/reistips.html"

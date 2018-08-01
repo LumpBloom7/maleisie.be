@@ -1,0 +1,21 @@
+---
+section_title: Actie en avontuur
+
+image:
+  source: "/assets/images/default/img_base.jpg"
+  text: >-
+      Afbeelding: Base jump vanaf Menara KL.
+
+links:
+
+  - title: Base jumping
+    alt: Base jumping in Maleisië
+    url: "http://www.maleisie.be/base_jumping.html"
+
+  - title: Formule 1 / Sepang
+    alt: Formule 1 / Sepang
+    url: "http://www.maleisie.be/formule_1_sepang.html"
+
+  - title: Golf
+    alt: Golf in Maleisië
+    url: "http://www.maleisie.be/golf.html"

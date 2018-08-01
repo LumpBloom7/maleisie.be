@@ -1,0 +1,42 @@
+<div class="cell_main_right" id="nav-right">
+  <!--Populate menu with data from _data/navigation/rightSidebar-->
+  {% for sections in site.data.navigation.rightSidebar %} {% assign section = sections[1] %}
+  {%if section.section_title != blank%}
+  <div class="menu_main">{{ section.section_title }}</div>
+  {%endif%}
+  {% if section.image %}
+  <div class="img_wrapper">
+    <img class="img1a" src={{ section.image.source }} alt="{{ section.image.text }}" />
+  </div>
+  {% endif %}
+  {% for item in section.links %}
+  {%if item.title %}
+  <div class="menu_generic">
+    {%if item.url%}
+    <a class="lb3" href={{ item.url }}
+    {%if item.nofollow == true%}
+    ref="nofollow"
+    {%endif%}
+    title="{{ item.alt }}">{{ item.title }}</a>
+    {%else%}
+    <em>{{item.title}}</em>
+    {%endif%}
+  </div>
+
+  {% else %}
+  <div class="menu_spacer_17"></div>
+  {%endif%}
+  {% endfor %}
+  {% endfor %}
+  <!--
+    <div class="menu_generic"><a class="lb3" href="http://www.tourism-malaysia.com/" title="Externe link: Tourism Malaysia">Tourism Malaysia</a></div>
+  -->
+  <div class="menu_generic"></div>
+  <div class="menu_generic"></div>
+  <div class="menu_generic"></div>
+  <div class="menu_spacer_35"></div>
+  <div class="img_wrapper">
+    <img class="img2a" src="/assets/images/default/filler.jpg" alt="Visit Malaysia" />
+  </div>
+  <div class="menu_spacer_35"></div>
+</div>
