@@ -1,0 +1,28 @@
+section_title: Het (sl)echte nieuws...
+
+image:
+  source: "/assets/images/default/img_brand.jpg"
+  text: >-
+    Afbeelding: Bosbrand
+
+links:
+
+  - title: Tsunami in Maleisië
+    alt: Tsunami
+    url: "/dossiers/tsunami.html"
+
+  - title: Bosbranden in Maleisië
+    alt: In de ban van het vuur, Gered door de regen, Flashback
+    url: "/dossiers/bosbranden.html"
+
+  - title: De 'haze' in Maleisië
+    alt: De haze in Maleisië, De oorsprong van de 'haze', De reden, Een kort overzicht 1997-2004, De gevolgen, De uiteindelijke oplossing
+    url: "/dossiers/haze_smog.html"
+
+  - title: Mensenrechten
+    alt: Mensenrechten
+    url: "/dossiers/mensenrechten.html"
+
+  - title:
+    alt:
+    url:

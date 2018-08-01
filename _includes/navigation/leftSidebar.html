@@ -1,0 +1,42 @@
+<div class="cell_main_left" id="nav-left">
+  <div class="menu_main">
+    <a class="lb1" href="http://nieuws.maleisie.be/" title="Nieuws.maleisie.be, hoofdpagina" rel="start" accesskey="1">Start</a>
+  </div>
+  <!--Populate menu with data from _data/navigation/leftSidebar-->
+  {% for sections in site.data.navigation.leftSidebar %} {% assign section = sections[1] %}
+  <div class="menu_main">{{ section.section_title }}</div>
+  {% if section.image.source %}
+  <div class="img_wrapper">
+    <img class="img1a" src={{ section.image.source }} alt="{{ section.image.text }}" />
+  </div>
+  {% endif %} {% for item in section.links %}
+  <div class="menu_generic">
+    <a class="lb3" href={{ item.url }} title="{{ item.alt }}">{{ item.title }}</a>
+  </div>
+  {% endfor %} {% endfor %}
+
+  <div class="menu_no_top_space"></div>
+
+  <div>
+    <form action="http://www.maleisie.be/" class="quickmenu">
+      <p>
+        <label for="quickmenu">
+          <select class="formw" onchange="if(this.value != '') { document.location = this.value; }" name="snelmenu" id="quickmenu">
+            <option value="">&nbsp;Snelmenu</option>
+            <option value="" disabled="disabled">&nbsp;</option>
+            <option value="" disabled="disabled">&nbsp;&nbsp;--- Maleisie.be ---</option>
+            <option value={{ site.parenturl }}>&middot; Maleisië algemeen</option>
+            <option value={{ site.url }}>&middot; Nieuws en faits divers</option>
+            <option value="" disabled="disabled">&nbsp;</option>
+            <option value={{ "/cgi-bin/search_nl/search.pl" | prepend: site.parenturl }}>&middot; Zoeken in Maleisie.be</option>
+            <option value={{ "/contact.html" | prepend: site.parenturl }}>&middot; Contacteer ons</option>
+            <option value="" disabled="disabled">&nbsp;</option>
+          </select>
+        </label>
+      </p>
+    </form>
+  </div>
+  <div class="menu_no_top_space"></div>
+  <div class="menu_generic"></div>
+  <div class="menu_generic"></div>
+</div>

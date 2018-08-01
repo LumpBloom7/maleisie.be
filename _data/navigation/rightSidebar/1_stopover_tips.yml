@@ -1,0 +1,22 @@
+section_title: Stopover Tips
+# Comment/Uncomment the image section in order to toggle image in section
+image:
+  source: "/assets/images/default/img_klia_express.jpg"
+  text: >-
+    Afbeelding: KLIA Express.
+
+links:
+
+  - title: Kuala Lumpur, stopover
+    alt: >-
+      Stopover tips: Kuala Lumpur, Maleisië
+    url: "http://www.maleisie.be/stopover_kuala_lumpur.html"
+
+  - title: Singapore, stopover
+    alt: >-
+      Stopover tips: Singapore
+    url: "http://www.maleisie.be/stopover_singapore.html"
+
+  - title:
+    alt:
+    url:
