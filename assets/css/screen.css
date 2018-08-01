@@ -19,9 +19,9 @@ form{margin-top:0;margin-bottom:0;width:160px;}
 	.vspace12{width:404px;height:1px;margin-bottom:12px;margin-top:12px;}
 	.vspace28{width:404px;height:1px;margin-bottom:28px;margin-top:28px;}
 	.vspace_a{width:404px;height:1px;margin-bottom:16px;margin-top:28px;}
-.dotline_12{width:404px;height:1px;margin-bottom:12px;margin-top:12px;}
-.dotline_28{width:404px;height:1px;margin-bottom:28px;margin-top:28px;}
-.dotline_a{width:404px;height:1px;margin-bottom:16px;margin-top:28px;}
+.dotline_12{width:406px;height:1px;margin-bottom:12px;margin-top:12px;}
+.dotline_28{width:406px;height:1px;margin-bottom:28px;margin-top:28px;}
+.dotline_a{width:406px;height:1px;margin-bottom:16px;margin-top:28px;}
 a{background-color:#ffffff;color:#003366;text-decoration:none;}
 a:link{background-color:#ffffff;color:#003366;text-decoration:none;}
 a:hover{background-color:#ffffff;color:#ff6633;text-decoration:none;}
@@ -138,3 +138,28 @@ a.go_top:active{background-color:#ffffff;color:#ff6633;font-family:verdana, aria
 * html div#banner_action{position:absolute;top:expression(eval(document.compatMode &&
 document.compatMode=='CSS1Compat') ?
 documentElement.scrollTop + 152:document.body.scrollTop + 152);background:transparent;}
+
+hr.dotline_12 {
+  border:none;
+  border-top:1px dotted #000;
+  color:#fff;
+  height:1px;
+  width:100%;
+	margin-bottom:12px;margin-top:12px;
+}
+hr.dotline_28 {
+  border:none;
+  border-top:1px dotted #000;
+  color:#fff;
+  height:1px;
+  width:100%;
+	margin-bottom:28px;margin-top:28px;
+}
+hr.dotline_a {
+  border:none;
+  border-top:1px dotted #000;
+  color:#fff;
+  height:1px;
+  width:100%;
+	margin-bottom:16px;margin-top:28px;
+}
