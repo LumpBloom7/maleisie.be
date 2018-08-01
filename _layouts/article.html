@@ -25,7 +25,7 @@
         <div class="cell_main_middle" id="container">
 
           <div class="middle_top_line" id="nav-center-top">
-            <div class="middle_location_path"><em><a href="http://www.maleisie.be/" title="Maleisië">Maleisië</a></em> &raquo; <em><a href="http://nieuws.maleisie.be/" title="Nieuws en faits divers - Hoofdpagina">Nieuws en faits divers</a></em> &raquo; <em><a href="http://nieuws.maleisie.be/{{ page.date | date: '%Y' }}/" title="Maleisië nieuws en faits divers archief voor het jaar {{ page.date | date: '%Y' }}">Archief {{ page.date | date: '%Y' }}</a></em> &raquo; <em>Artikel</em></div>
+            <div class="middle_location_path"><em><a href={{site.parenturl}} title="Maleisië">Maleisië</a></em> &raquo; <em><a href="/" title="Nieuws en faits divers - Hoofdpagina">Nieuws en faits divers</a></em> &raquo; <em><a href="/{{ page.date | date: '%Y' }}/" title="Maleisië nieuws en faits divers archief voor het jaar {{ page.date | date: '%Y' }}">Archief {{ page.date | date: '%Y' }}</a></em> &raquo; <em>Artikel</em></div>
             <div class="middle_clock">
               <span title="Maleisische Standaardtijd (UTC+8)">MST: <span id="maleisie_time" class="maleisie_time">&nbsp;</span>
               <script type="text/javascript">
@@ -56,8 +56,8 @@
           <img class="dotline_28" src="/assets/images/default/dots.png" alt="-" />
 
           {% include recenteNieuws.html %}
-          &#8226;&#160; <a href="http://nieuws.maleisie.be/{{ page.date | date: '%Y' }}/">Eerder gepubliceerde berichten uit {{ page.date | date: '%Y' }}</a><br />
-          &#8226;&#160; <a href="http://nieuws.maleisie.be/index.html#archief">Links naar het nieuwsarchief</a><br />
+          &#8226;&#160; <a href="/{{ page.date | date: '%Y' }}/">Eerder gepubliceerde berichten uit {{ page.date | date: '%Y' }}</a><br />
+          &#8226;&#160; <a href="/index.html#archief">Links naar het nieuwsarchief</a><br />
 
           <!-- robots content="noindex" -->
 
