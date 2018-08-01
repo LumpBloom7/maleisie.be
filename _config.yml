@@ -23,7 +23,7 @@ parenturl: "http://www.maleisie.be"
 twitter_username:
 facebook_username: maleisie.be
 
-permalink: /:categories/:year/:year:month:day_:title:output_ext
+permalink: /:year/:year:month:day_:title:output_ext
 
 # Build settings
 markdown: kramdown
