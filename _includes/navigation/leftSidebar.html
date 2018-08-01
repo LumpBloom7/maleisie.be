@@ -1,6 +1,6 @@
 <div class="cell_main_left" id="nav-left">
   <div class="menu_main">
-    <a class="lb1" href="http://nieuws.maleisie.be/" title="Nieuws.maleisie.be, hoofdpagina" rel="start" accesskey="1">Start</a>
+    <a class="lb1" href="/" title="Nieuws.maleisie.be, hoofdpagina" rel="start" accesskey="1">Start</a>
   </div>
   <!--Populate menu with data from _data/navigation/leftSidebar-->
   {% for sections in site.data.navigation.leftSidebar %} {% assign section = sections[1] %}
@@ -18,7 +18,7 @@
   <div class="menu_no_top_space"></div>
 
   <div>
-    <form action="http://www.maleisie.be/" class="quickmenu">
+    <form action={{site.parenturl}} class="quickmenu">
       <p>
         <label for="quickmenu">
           <select class="formw" onchange="if(this.value != '') { document.location = this.value; }" name="snelmenu" id="quickmenu">
