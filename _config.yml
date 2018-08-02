@@ -27,7 +27,6 @@ permalink: /:year/:year:month:day_:title:output_ext
 
 # Build settings
 markdown: kramdown
-theme: minima
 plugins:
   - jekyll-feed
 
