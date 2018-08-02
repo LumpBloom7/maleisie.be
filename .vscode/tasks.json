@@ -6,14 +6,21 @@
     {
       "label": "Build site",
       "type": "shell",
-      "command": "jekyll build",
+      "command": "jekyll build --incremental",
       "group": "build",
       "problemMatcher": []
     },
     {
-      "label": "Build and serve site",
+      "label": "Deploy site",
       "type": "shell",
-      "command": "jekyll serve",
+      "command": "winscp /command \"open sftp://nouveau@ftp.nouveaustere.com:2223/ -hostkey=\"\"ssh-rsa 2048 qQ6k04WY6+2YbTzki0/5dZ1GZ/Q5c+P0nUU0yuN1npU=\"\" -rawsettings ProxyPort=1\" \"synchronize remote -delete ${workspaceFolder}\\_site /home/nouveau/staging.maleisie.be\" \"exit\"",
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "Build and serve site (Test on localhost:4000)",
+      "type": "shell",
+      "command": "jekyll serve --incremental",
       "group": "test"
     }
   ]
