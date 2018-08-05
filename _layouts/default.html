@@ -41,11 +41,8 @@
             <div class="middle_clock">
               <span title="Maleisische Standaardtijd (UTC+8)">MST:
                 <span id="maleisie_time" class="maleisie_time">&nbsp;</span>
-                <script type="text/javascript">
-                  //<![CDATA[
-                  setInterval(show_current_time, 500);
-                  //]]>
-                </script>
+                <script>StartClock();</script>
+                <span id="theTime"></span>
               </span>
             </div>
           </div>
@@ -70,9 +67,8 @@
           <br /> Een uitgebreid en voortdurend groeiend aanbod aan nieuwsberichten en diverse feiten vind u terug in ons archief,
           eenvoudig te raadplegen via onderstaande archief pagina's of via onze interne zoekfunctie.
           <br />
-          <br /> Aantal artikels in het archief:
+          <br /> Aantal artikels in het archief: {{ site.categories.nieuws | size }}
           <strong>
-            <!--#echo var="VAR_doctotal" -->
           </strong>
           <br />
           <a href="#archief" title="Klik hier voor links naar het archief">Klik hier voor links naar het archief</a>
