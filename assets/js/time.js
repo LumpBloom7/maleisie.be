@@ -1,7 +1,35 @@
-function show_current_time()
-{var seconds_current,seconds_previous,separator,date;seconds_current=get_maleisie_seconds();seconds_previous=('seconds_previous'in this)?this.seconds_previous:null;separator=(seconds_previous!=seconds_current)?':':'<font color="#f1f1f1">:</font>';this.seconds_previous=seconds_current;date=new Date(seconds_current*1000);document.getElementById('maleisie_time').innerHTML=_int_pad_string(date.getUTCHours(),2,'0')+separator+_int_pad_string(date.getUTCMinutes(),2,'0');}
-function get_maleisie_seconds()
-{var date;date=new Date();return(Date.UTC(date.getUTCFullYear(),date.getUTCMonth(),date.getUTCDate(),date.getUTCHours(),date.getUTCMinutes(),date.getUTCSeconds())/1000+(8*3600));}
-function _int_pad_string(value,length,symbol)
-{value=value.toString();while(value.length<length){value=symbol+value;}
-return(value);}
+var clockID;
+var yourTimeZoneFrom = +8.00; //time zone value where you are at
+
+var d = new Date();
+//get the timezone offset from local time in minutes
+var tzDifference = yourTimeZoneFrom * 60 + d.getTimezoneOffset();
+//convert the offset to milliseconds, add to targetTime, and make a new Date
+var offset = tzDifference * 60 * 1000;
+
+function UpdateClock() {
+  var tDate = new Date(new Date().getTime() + offset);
+  var in_hours = tDate.getHours()
+  var in_minutes = tDate.getMinutes();
+  var in_seconds = tDate.getSeconds();
+
+  if (in_minutes < 10)
+    in_minutes = '0' + in_minutes;
+  if (in_seconds < 10)
+    in_seconds = '0' + in_seconds;
+  if (in_hours < 10)
+    in_hours = '0' + in_hours;
+
+  document.getElementById('theTime').innerHTML = ""
+    + in_hours + ":"
+    + in_minutes + ":"
+    + in_seconds;
+
+}
+function StartClock() {
+  clockID = setInterval(UpdateClock, 500);
+}
+
+function KillClock() {
+  clearTimeout(clockID);
+}
