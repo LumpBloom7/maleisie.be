@@ -3,8 +3,10 @@
   <div class="entry-content">
 
     <h2>Recente nieuwsberichten:</h2>
+    <div class="recent">
     {% for post in site.posts limit:11 %} &#8226;&#160;
     <a href="{{ post.url }} " title="{{ post.date | date: '%Y/%m/%d' }} {{ post.title }}">{{ post.date | date: '%Y/%m/%d' }} {{ post.title }}</a>
+  </div>
     <br/> {% endfor %}
     <br />
 
