@@ -2,7 +2,7 @@
 layout: article
 title:  "Zoekoperatie naar MH370 stuit op scheepswrak 19e eeuw"
 date:   2016-01-14
-categories: nieuws
+categories: nieuws 2016
 ---
 De zoektocht naar de vermiste vlucht MH370 van Malaysia Airlines heeft op een diepte van 3,7 kilometer een scheepswrak opgeleverd. Het is de tweede keer dat zoiets gebeurt, sinds de zoektocht bijna twee jaar geleden begon.
 
