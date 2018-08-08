@@ -1,23 +1,23 @@
-<div class="hd1_outer" id="header">
-  <div class="hd1_left">
-    <div class="bx1">
-      <a href={{site.parenturl}} title="Maleisie.be, hoofdpagina" id="top">
-        <img class="img1a" src={{"/images/banners/160x053_maleisie_02.jpg" | prepend: site.parenturl }} alt="Maleisië" />
-      </a>
-    </div>
-  </div>
-  <div class="hd1_middle2">&nbsp;</div>
-  <div class="hd1_right">
-    <div class="bx1">
-      <form action={{"/cgi-bin/search_nl/search.pl" | prepend: site.parenturl }} method="get" class="search_form">
-        <p>
-          <label for="fdse_TermsEx"></label>
-          <input type="text" name="Terms" id="fdse_TermsEx" class="search_text" maxlength="256" size="9" />
-          <br />
-          <label for="fdse_EnterEx"></label>
-          <input type="submit" id="fdse_EnterEx" class="search_button" value="Zoek in deze site" />
-        </p>
-      </form>
-    </div>
-  </div>
+<div class="header" id="header">
+  <a href={{site.parenturl}} title="Maleisie.be, hoofdpagina">
+    <img class="logo" src={{ "/images/banners/160x053_maleisie_02.jpg" | prepend: site.parenturl }} alt="Maleisië" />
+  </a>
+
+  <form action={{ "/cgi-bin/search_nl/search.pl" | prepend: site.parenturl }} method="get" class="search_form">
+    <p>
+      <label for="fdse_TermsEx"></label>
+      <input type="text" name="Terms" id="fdse_TermsEx" class="search_text" maxlength="256" size="9" />
+      <br />
+      <label for="fdse_EnterEx"></label>
+      <input type="submit" id="fdse_EnterEx" class="search_button" value="Zoek in deze site" />
+    </p>
+  </form>
+</div>
+
+<div class="TopNav" id="nav-top">
+  <a class="item" href={{site.parenturl}} title="Maleisie.be, hoofdpagina">Maleisië algemeen</a>
+  <a class="item strong" href="/" title="Maleisie.be, nieuws en faits divers">
+    <strong>Nieuws en faits divers</strong>
+  </a>
+
 </div>

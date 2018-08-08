@@ -2,77 +2,82 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl">
 
 {% include head.html %}
+
 <body>
 
   <!-- robots content="noindex" -->
 
-  <div class="hd0_outer_wrapper center">
 
     {% include header.html %}
+    <div class="bodyWrapper">
+      {% include navigation/leftSidebar.html %}
 
-    {% include navigation/topNav.html %}
-    <div class="hd3_outer" id="nav-spacer">
-      <div class="hd3_left">&nbsp;</div>
-      <div class="hd3_middle">&nbsp;</div>
-      <div class="hd3_right">&nbsp;</div>
-    </div>
+      <div style="margin-right: 1px;overflow-x:  hidden;">
+        <div class="spacer" id="nav-spacer">
+        </div>
+        <div class="contentArea" id="container">
 
-    <div class="cell_main_wrapper_1">
-      <div class="cell_main_wrapper_2">
+          <div class="infobar" id="nav-center-top">
+            <div class="path">
+              <em>
+                <a href={{site.parenturl}} title="Maleisië">Maleisië</a>
+              </em> &raquo;
+              <em>
+                <a href="/" title="Nieuws en faits divers - Hoofdpagina">Nieuws en faits divers</a>
+              </em> &raquo;
+              <em>
+                <a href="/{{ page.date | date: '%Y' }}/" title="Maleisië nieuws en faits divers archief voor het jaar {{ page.date | date: '%Y' }}">Archief {{ page.date | date: '%Y' }}</a>
+              </em> &raquo;
+              <em>Artikel</em>
+            </div>
+            <div class="clock">
+              <span title="Maleisische Standaardtijd (UTC+8)">MST:
+                <script>StartClock();</script>
+                <span id="theTime"></span>
+              </span>
+            </div>
+          </div>
 
-        {% include navigation/leftSidebar.html %}
+          <!-- /robots -->
 
-        <div class="cell_main_middle" id="container">
+          <hr class="dotline_12">
 
-          <div class="middle_top_line" id="nav-center-top">
-            <div class="middle_location_path"><em><a href={{site.parenturl}} title="Maleisië">Maleisië</a></em> &raquo; <em><a href="/" title="Nieuws en faits divers - Hoofdpagina">Nieuws en faits divers</a></em> &raquo; <em><a href="/{{ page.date | date: '%Y' }}/" title="Maleisië nieuws en faits divers archief voor het jaar {{ page.date | date: '%Y' }}">Archief {{ page.date | date: '%Y' }}</a></em> &raquo; <em>Artikel</em></div>
-            <div class="middle_clock">
-              <span title="Maleisische Standaardtijd (UTC+8)">MST: <span id="maleisie_time" class="maleisie_time">&nbsp;</span>
-              <script>StartClock();</script>
-              <span id="theTime"></span>
-            </span>
+          <strong>{{ page.date | date: '%Y/%m/%d' }} {{ page.title }}</strong>
+          <br />
+          <div align="justify">
+
+            {{ content }}
+
+          </div>
+
+          <!--
+            <img class="dotline_28" src="../images/default/dots.png" alt="-" />
+
+            FB CODE -->
+
+            <hr class="dotline_28"> {% include recenteNieuws.html %}
+            &#8226;&#160;<a href="/{{ page.date | date: '%Y' }}/">Eerder gepubliceerde berichten uit {{ page.date | date: '%Y' }}</a><br/>
+            &#8226;&#160;<a href="/index.html#archief">Links naar het nieuwsarchief</a></p>
+            <br />
+
+            <!-- robots content="noindex" -->
+
+            <br />
+            <br />
+            <br />
+
           </div>
         </div>
 
-        <!-- /robots -->
-
-        <hr class="dotline_12">
-
-        <strong>{{ page.date | date: '%Y/%m/%d' }} {{ page.title }}</strong><br />
-        <div align="justify">
-
-          {{ content }}
+          {% include navigation/rightSidebar.html %}
 
         </div>
-
-        <!--
-          <img class="dotline_28" src="../images/default/dots.png" alt="-" />
-
-          FB CODE -->
-
-          <hr class="dotline_28">
-
-          {% include recenteNieuws.html %}
-          &#8226;&#160; <a href="/{{ page.date | date: '%Y' }}/">Eerder gepubliceerde berichten uit {{ page.date | date: '%Y' }}</a><br />
-          &#8226;&#160; <a href="/index.html#archief">Links naar het nieuwsarchief</a><br />
-
-          <!-- robots content="noindex" -->
-
-          <br /><br /><br />
-
-        </div>
-
-        {% include navigation/rightSidebar.html %}
-
-        <div class="cleaner">&nbsp;</div>
       </div>
-    </div>
 
-    {% include footer.html %}
+      {% include footer.html %}
 
-  </div>
+    <!-- /robots -->
 
-  <!-- /robots -->
+  </body>
 
-</body>
-</html>
+  </html>

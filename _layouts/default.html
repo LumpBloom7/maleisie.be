@@ -6,172 +6,151 @@
 
 <title>Maleisie&#46;be - Actueel Maleisië nieuws en faits divers</title>
 {% include head.html %}
+
 <body>
 
   <noscript>
     <p>Nieuws.maleisie.be kan ook zonder javascript probleemloos bekeken worden.</p>
   </noscript>
 
-  <div class="hd0_outer_wrapper center">
 
-    {% include header.html %}
+  {% include header.html %}
 
-    {% include navigation/topNav.html %}
+  <div class="bodyWrapper">
 
-    <div class="hd3_outer" id="nav-spacer">
-      <div class="hd3_left">&nbsp;</div>
-      <div class="hd3_middle">&nbsp;</div>
-      <div class="hd3_right">&nbsp;</div>
-    </div>
-
-    <div class="cell_main_wrapper_1">
-      <div class="cell_main_wrapper_2">
-
-        {% include navigation/leftSidebar.html %}
-
-        <div class="cell_main_middle" id="container">
-
-          <div class="middle_top_line" id="nav-center-top">
-            <div class="middle_location_path">
-              <em>
-                <a href={{site.parenturl}} title="Maleisië">Maleisië</a>
-              </em> &raquo;
-              <em>Nieuws en faits divers</em>
-            </div>
-            <div class="middle_clock">
-              <span title="Maleisische Standaardtijd (UTC+8)">MST:
-                <span id="maleisie_time" class="maleisie_time">&nbsp;</span>
-                <script>StartClock();</script>
-                <span id="theTime"></span>
-              </span>
-            </div>
+    {% include navigation/leftSidebar.html %}
+    <div style="margin-right: 1px;overflow-x:  hidden;">
+      <div class="spacer" id="nav-spacer">
           </div>
+    <div class="contentArea" id="container">
 
-          <hr class="dotline_12">
 
-          {{ content }}
 
-          <hr class="dotline_28">
+      <div class="infobar" id="nav-center-top">
+        <div class="path">
+          <em>
+            <a href={{site.parenturl}} title="Maleisië">Maleisië</a>
+          </em> &raquo;
+          <em>Nieuws en faits divers</em>
+        </div>
 
-          <!--
-      <iframe src="//www.facebook.com/plugins/like.php?href=https://www.facebook.com/maleisie.be/&amp;width=350&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:350px; height:21px;"></iframe>
+        <div class="clock">
+          <span title="Maleisische Standaardtijd (UTC+8)">MST:
+            <script>StartClock();</script>
+            <span id="theTime"></span>
+          </span>
+        </div>
+      </div>
 
-      <img class="dotline_a" src="images/default/dots.png" alt="-" />
--->
-          {% include recenteNieuws.html %}
+      <hr class="dotline_12"> {{ content }}
 
-          Volg updates via
-          <a href={{ "/rss/maleisie_nieuws.xml" | prepend: site.parenturl }} title="Maleisie.be RSS feed">RSS</a> of Facebook:
-          <a href="https://www.facebook.com/{{site.facebook_username}}/" title="Externe link: Maleisie.be op Facebook">www.facebook.com/maleisie.be</a>
-          <br />
-          <br /> Een uitgebreid en voortdurend groeiend aanbod aan nieuwsberichten en diverse feiten vind u terug in ons archief,
-          eenvoudig te raadplegen via onderstaande archief pagina's of via onze interne zoekfunctie.
-          <br />
-          <br /> Aantal artikels in het archief: {{ site.categories.nieuws | size }}
-          <strong>
-          </strong>
-          <br />
-          <a href="#archief" title="Klik hier voor links naar het archief">Klik hier voor links naar het archief</a>
-          <br />
+      <hr class="dotline_28">
 
-          <hr class="dotline_28" id="archief">
 
-          {% include archieven.html %}
+      {% include recenteNieuws.html %}
 
-          <br /> Het online archief is vrij toegankelijk en wordt regelmatig uitgebreidt met recent Maleisië nieuws uit zowel binnen-
-          als buitenlandse media. Oudere berichten worden geplaatst van zodra deze beschikbaar zijn.
-          <br />
+      <p>Volg updates via
+        <a href={{ "/rss/maleisie_nieuws.xml" | prepend: site.parenturl }} title="Maleisie.be RSS feed">RSS</a> of Facebook:
+        <a href="https://www.facebook.com/{{site.facebook_username}}/" title="Externe link: Maleisie.be op Facebook">www.facebook.com/maleisie.be</a>
+      </p>
+      <p>Een uitgebreid en voortdurend groeiend aanbod aan nieuwsberichten en diverse feiten vind u terug in ons archief,
+        eenvoudig te raadplegen via onderstaande archief pagina's of via onze interne zoekfunctie.
+      </p>
+      <p> Aantal artikels in het archief: <strong>{{ site.categories.nieuws | size }}</strong></p>
 
-          <hr class="dotline_28">
+      <p></p><a href="#archief" title="Klik hier voor links naar het archief">Klik hier voor links naar het archief</a></p>
 
-          <div class="middle_image_img">
-            <img src="/dossiers/images/bordered/haze.jpg" alt="Afbeelding: De haze." />
-          </div>
-          <div class="middle_image_text">
-            <strong>Dossier: Haze in Maleisië</strong>
-            <br />
-            <br /> Kuala Lumpur - Maleisië heeft sedert jaren herhaaldelijk af te rekenen met een verstikkende, vaak giftige smog
+      <hr class="dotline_28" id="archief"> {% include archieven.html %}
+
+      <p>Het online archief is vrij toegankelijk en wordt regelmatig uitgebreidt met recent Maleisië nieuws uit zowel binnen-
+        als buitenlandse media. Oudere berichten worden geplaatst van zodra deze beschikbaar zijn.
+      </p>
+
+      <hr class="dotline_28">
+      <div class="dossiers" id="dossiers">
+        <div>
+          <img src="/dossiers/images/bordered/haze.jpg" alt="Afbeelding: De haze." />
+        </div>
+        <div>
+          <strong>Dossier: Haze in Maleisië</strong>
+
+          <p>Kuala Lumpur - Maleisië heeft sedert jaren herhaaldelijk af te rekenen met een verstikkende, vaak giftige smog
             afkomstig van bos- en veenbranden in Indonesië maar ook in Maleisië zelf.
-            <br />(Laatste aanpassing: 2007/07/18)
-            <br />
-            <br />
-            <strong>
-              <a href="/dossiers/haze_smog.html" title="De haze in Maleisië, De oorsprong van de 'haze', De reden, Een kort overzicht 1997-2007, De gevolgen, De uiteindelijke oplossing">Lees verder &#187;</a>
-            </strong>
-          </div>
+          </p>
+          <p>(Laatste aanpassing: 2007/07/18)</p>
+          <p><strong>
+            <a href="/dossiers/haze_smog.html" title="De haze in Maleisië, De oorsprong van de 'haze', De reden, Een kort overzicht 1997-2007, De gevolgen, De uiteindelijke oplossing">Lees verder &#187;</a>
+          </strong></p>
+        </div>
+      </div>
 
-          <hr class="dotline_28">
+      <hr class="dotline_28">
 
-          <div class="middle_image_img">
-            <img src="/dossiers/images/bordered/bosbranden.jpg" alt="Afbeelding: Bosbrand." />
-          </div>
-          <div class="middle_image_text">
-            <strong>Dossier: Bosbranden in Maleisië</strong>
-            <br />
-            <br /> Kuala Lumpur - Aanhoudende droogte en buitengewoon hoge temperaturen veroorzaakten eind februari 2005 over geheel
+      <div class="dossiers">
+        <div>
+          <img src="/dossiers/images/bordered/bosbranden.jpg" alt="Afbeelding: Bosbrand." />
+        </div>
+        <div>
+          <strong>Dossier: Bosbranden in Maleisië</strong>
+          <p>Kuala Lumpur - Aanhoudende droogte en buitengewoon hoge temperaturen veroorzaakten eind februari 2005 over geheel
             Maleisië bosbranden. Een kort verslag met enkele exclusieve foto's.
-            <br />(Laatste aanpassing: 2005/03/22)
-            <br />
-            <br />
+          </p>
+          <p>(Laatste aanpassing: 2005/03/22)</p>
+          <p>
             <strong>
               <a href="/dossiers/bosbranden.html" title="In de ban van het vuur, Gered door de regen, Flashback">Lees verder &#187;</a>
             </strong>
-          </div>
+          </p>
+        </div>
+      </div>
 
-          <hr class="dotline_28">
+      <hr class="dotline_28">
 
-          <div class="middle_image_img">
-            <img src="/dossiers/images/bordered/tsunami.jpg" alt="Afbeelding: Tsunami." />
-          </div>
-          <div class="middle_image_text">
-            <strong>Dossier: Tsunami in Maleisië</strong>
-            <br />
-            <br /> Penang - 2004 sloot af met een zware aardbeving nabij Indonesië met een tsunami als gevolg. De verwoestende
+      <div class="dossiers">
+
+        <div>
+          <img src="/dossiers/images/bordered/tsunami.jpg" alt="Afbeelding: Tsunami." />
+        </div>
+        <div >
+          <strong>Dossier: Tsunami in Maleisië</strong>
+          <p>Penang - 2004 sloot af met een zware aardbeving nabij Indonesië met een tsunami als gevolg. De verwoestende
             en dodelijke vloedgolf maakte in Maleisië enkele tientallen slachtoffers.
-            <br />(Laatste aanpassing: 2005/03/06)
-            <br />
-            <br />
+          </p>
+          <p>(Laatste aanpassing: 2005/03/06)</p>
+          <p>
             <strong>
               <a href="/dossiers/tsunami.html" title="Tsunami">Lees verder &#187;</a>
             </strong>
-          </div>
+          </p>
+        </div></div>
+
+        <hr class="dotline_28">
+
+        <p><em>Nieuwsberichten worden overgenomen van diverse media, hiervoor beroept Maleisie.be zich op het recht van vrije
+          nieuwsgaring. Inhoud en karakter van deze berichten komen niet noodzakelijk overeen met de standpunten van Maleisie.be.
+          Maleisie.be kan niet instaan voor de juistheid en/of inhoud van deze berichten en geen geval aansprakelijk worden
+          gesteld voor schade die rechtstreeks of onrechtstreeks veroorzaakt zou kunnen worden door het gebruik ervan.
+          Maleisie.be benadrukt dat het zich met Nieuws.maleisie.be eerder wenst te profileren als agregator dan online
+          krant of magazine.</em>
+        </p>
 
           <hr class="dotline_28">
 
-          <em>Nieuwsberichten worden overgenomen van diverse media, hiervoor beroept Maleisie.be zich op het recht van vrije
-            nieuwsgaring. Inhoud en karakter van deze berichten komen niet noodzakelijk overeen met de standpunten van Maleisie.be.
-            Maleisie.be kan niet instaan voor de juistheid en/of inhoud van deze berichten en geen geval aansprakelijk worden
-            gesteld voor schade die rechtstreeks of onrechtstreeks veroorzaakt zou kunnen worden door het gebruik ervan.
-            Maleisie.be benadrukt dat het zich met Nieuws.maleisie.be eerder wenst te profileren als agregator dan online
-            krant of magazine.</em>
-          <br />
-
-          <hr class="dotline_28">
-          <br />
-          <br />
-
-          <div class="f1_outer" id="nav-center-bottom">
-            <div class="f1_inner_left">&nbsp;</div>
-            <div class="f1_inner_right">
-              <a href="#top" title="Omhoog">Omhoog&nbsp;
+          <div class="returnTop" id="nav-center-bottom">
+            <a href="#top" title="Omhoog">Omhoog&nbsp;
                 <img src="/assets/images/default/top.png" width="5" height="10" alt="Omhoog" />
               </a>
-            </div>
           </div>
 
         </div>
-
+      </div>
         {% include navigation/rightSidebar.html %}
 
-        <div class="cleaner">&nbsp;</div>
       </div>
-    </div>
 
-    {% include footer.html %}
-
-  </div>
+      {% include footer.html %}
 
 
-</body>
+    </body>
 
-</html>
+    </html>
