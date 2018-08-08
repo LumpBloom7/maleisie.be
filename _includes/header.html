@@ -5,11 +5,9 @@
 
   <form action={{ "/cgi-bin/search_nl/search.pl" | prepend: site.parenturl }} method="get" class="search_form">
     <p>
-      <label for="fdse_TermsEx"></label>
-      <input type="text" name="Terms" id="fdse_TermsEx" class="search_text" maxlength="256" size="9" />
+      <input type="text" name="Terms" id="fdse_TermsEx" class="search_text" aria-label="Search box" maxlength="256" size="9" />
       <br />
-      <label for="fdse_EnterEx"></label>
-      <input type="submit" id="fdse_EnterEx" class="search_button" value="Zoek in deze site" />
+      <input type="submit" id="fdse_EnterEx" aria-label="Search button" class="search_button" value="Zoek in deze site" />
     </p>
   </form>
 </div>
