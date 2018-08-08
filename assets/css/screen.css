@@ -164,7 +164,6 @@ a.go_top:active{background-color:#ffffff;color:#ff6633;text-decoration:none;}
   padding-right:13px;
   text-align:left;
   vertical-align:top;
-  width: 100%;
   width: -moz-available;          /* WebKit-based browsers will ignore this. */
   width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
   width: fill-available;
