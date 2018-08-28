@@ -45,16 +45,27 @@ a.go_top:active{background-color:#ffffff;color:#ff6633;text-decoration:none;}
 
 .TopNav{
   background: #000000;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  height:1rem;
+  height: fit-content;
   min-width: 650px;
   margin-bottom: 1px;
+  display:flex;
+}
+.TopNav div{
+  min-width: 210px;
+  max-width: 210px;
+  width: 210px;
+  text-align: center;
+  border-right: #ffffff;
+  border-right-width: 1px;
+  border-right-style: solid;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 .TopNav .item{
   color: #ffffff;
   background: #000000;
-  margin-left: 38px;
+  width: 160px;
+  text-align: center;
 }
 
 .spacer{
@@ -70,13 +81,12 @@ a.go_top:active{background-color:#ffffff;color:#ff6633;text-decoration:none;}
 .nav{
   display: inline-block;
   width: fit-content;
-  min-width:160px;
+  min-width:210px;
   margin:0px;
   background:white;
   color:#000000;
   vertical-align:top;
   height: 100%;
-  padding-right: 1em;
   overflow-x: hidden;
   margin-right: 1px;
 }
@@ -124,7 +134,7 @@ a.go_top:active{background-color:#ffffff;color:#ff6633;text-decoration:none;}
   color:#ff6633;
 }
 .nav img{
-  width:calc(100% + 1.2em);
+  width:100%;
   background:#f1f1f1;
 }
 .nav .quickMenu{
@@ -164,6 +174,7 @@ a.go_top:active{background-color:#ffffff;color:#ff6633;text-decoration:none;}
   padding-right:13px;
   text-align:left;
   vertical-align:top;
+  /* Edge doesn't support "Fill Available" yet*/
   width: -moz-available;          /* WebKit-based browsers will ignore this. */
   width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
   width: fill-available;
